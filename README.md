@@ -1,7 +1,7 @@
 # Git Simulator - Python 
 
 ##  Overview
-This is a Python-based conversion of the original C++ Git Simulator. It provides an interactive web interface to visualize Git operations like commits, branching, and merging through a beautiful graphical interface.
+This is a Python-based Git Simulator. It provides an interactive web interface to visualize Git operations like commits, branching, and merging through a beautiful graphical interface.
 
 ##  Technology Stack
 - **Backend**: Python with FastAPI
