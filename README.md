@@ -1,20 +1,20 @@
-# Git Simulator - Python Edition Setup Guide
+# Git Simulator - Python 
 
-## 🎯 Overview
+##  Overview
 This is a Python-based conversion of the original C++ Git Simulator. It provides an interactive web interface to visualize Git operations like commits, branching, and merging through a beautiful graphical interface.
 
-## 🛠️ Technology Stack
+##  Technology Stack
 - **Backend**: Python with FastAPI
 - **Frontend**: React with Cytoscape.js for graph visualization
 - **API Communication**: Axios for HTTP requests
 - **Visualization**: Cytoscape.js for interactive commit graphs
 
-## 📋 Prerequisites
+##  Prerequisites
 - Python 3.8 or higher
 - Node.js and npm (optional, for frontend development)
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 
-## 🚀 Installation Steps
+## Installation Steps
 
 ### Step 1: Clone or Download the Project
 ```bash
@@ -67,7 +67,7 @@ python-multipart==0.0.6
 1. Create a `frontend` folder
 2. Save the HTML frontend code as `frontend/index.html`
 
-## ▶️ Running the Application
+##  Running the Application
 
 ### Step 1: Start the Backend Server
 ```bash
@@ -78,7 +78,8 @@ cd backend
 pip install -r requirements.txt
 
 # Start the FastAPI server
-python main.py
+python main.py  (or)
+uvicorn main:app --reload  
 ```
 
 The backend server will start on `http://localhost:8000`
@@ -96,7 +97,7 @@ python -m http.server 3000
 # Then open http://localhost:3000 in your browser
 ```
 
-## 🎮 How to Use
+## How to Use
 
 ### 1. **Creating Commits**
 - Enter a commit message in the "Create Commit" section
@@ -136,7 +137,7 @@ The backend provides the following REST API endpoints:
 - `GET /status/{session_id}` - Get repository status
 - `POST /clear` - Clear repository state
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend Issues
 1. **Port 8000 already in use**:
@@ -158,25 +159,17 @@ The backend provides the following REST API endpoints:
 2. **Graph not displaying**: Check browser console for JavaScript errors
 3. **API connection failed**: Verify backend server is running and accessible
 
-## 🆚 Differences from Original C++ Version
-
-### Advantages of Python Version:
-- **Easier Setup**: No need to compile C++ code
-- **Better Error Handling**: More descriptive error messages
-- **Extensible**: Easy to add new features and modify existing ones
-- **Cross-Platform**: Runs on Windows, macOS, and Linux without compilation
-- **Modern Framework**: Uses FastAPI for better API documentation and validation
 
 ### Features:
-- ✅ Session-based isolation (multiple users can use simultaneously)
-- ✅ Interactive commit graph visualization
-- ✅ Real-time updates
-- ✅ Branch creation and switching
-- ✅ Merge operations with proper commit parents
-- ✅ Repository status tracking
-- ✅ Responsive design for different screen sizes
+-  Session-based isolation (multiple users can use simultaneously)
+-  Interactive commit graph visualization
+-  Real-time updates
+-  Branch creation and switching
+-  Merge operations with proper commit parents
+-  Repository status tracking
+-  Responsive design for different screen sizes
 
-## 🚀 Advanced Usage
+##  Advanced Usage
 
 ### Development Mode
 ```bash
@@ -201,7 +194,7 @@ You can modify the following in `main.py`:
 - Add authentication if needed
 - Extend with additional Git operations
 
-## 📝 Next Steps
+##  Next Steps
 
 1. **Try the Basic Operations**:
    - Create a few commits
@@ -220,23 +213,3 @@ You can modify the following in `main.py`:
    - Add commit diff visualization
    - Include file tree representation
 
-## 🤝 Contributing
-
-Feel free to fork this project and submit pull requests for improvements:
-- Add new Git operations
-- Improve the UI/UX
-- Add unit tests
-- Optimize performance
-- Add more visualization options
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-## 🎉 Congratulations!
-
-You now have a fully functional Git Simulator running in Python! This tool will help you understand Git operations visually and can be used for educational purposes or as a foundation for more advanced Git tooling.
-
-Happy coding! 🚀
